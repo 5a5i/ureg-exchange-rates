@@ -25,6 +25,9 @@ fe-up:
 	docker compose -f ./frontend/docker-compose.yml up -d
 composer-update:
 	docker exec app bash -c "composer update"
+npm-start:
+	docker exec web bash -c "npm install"
+	docker exec web bash -c "npm start"
 data:
 	docker exec app bash -c "php artisan migrate"
 	docker exec app bash -c "php artisan db:seed"

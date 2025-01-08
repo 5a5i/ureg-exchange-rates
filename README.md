@@ -14,13 +14,14 @@ This project handles currency exchange rates with backend (Laravel) and frontend
 
 ## 🛠️ **Prerequisites**
 - **Docker Desktop** (latest version)
+- **Terminal** (Linux)
 
 ---
 
 ## 🚀 **Setup & Run the Project**
 1. Clone the main repository:
    ```bash
-   git clone --recurse-submodules https://github.com/yourusername/ureg-exchange-rates.git
+   git clone --recurse-submodules https://github.com/5a5i/ureg-exchange-rates.git
 2. Enter into project directory:
    ```bash
    cd ureg-exchange-rates
@@ -55,6 +56,9 @@ This project handles currency exchange rates with backend (Laravel) and frontend
 ## 🔑 **Environment Variables**
 1. Backend (backend/.env.example)
    ```plaintext
+    APP_NAME=U-Reg
+    APP_ENV=local
+    APP_TIMEZONE=Asia/Kuala_Lumpur
     APP_KEY=base64:randomkeyhere
     DB_CONNECTION=mysql
     DB_HOST=mysql
